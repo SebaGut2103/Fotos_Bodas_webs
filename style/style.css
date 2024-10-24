@@ -1,42 +1,102 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100vh;
+
+body {
+    min-width: 768px;;
 }
-.start{
-  background-color:#feb4cd;
-  height: 50vh;  
+
+.start {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: #feb4cd;
+    height: 45.7vh;
 }
-.start-end{
+
+.start-end {
     background-color: #fff35f;
     height: 50vh;
 }
-.chat{
+
+.chat {
+    padding: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.4em;
     font-family: sans-serif;
     font-weight: 600;
-    text-align: center;
     background-color: #fff35f;
     position: fixed;
     right: 1vh;
     bottom: 1vh;
     border: 1px solid black;
-    border-radius:50%;
-    height:15vh ;
+    border-radius: 50%;
+    height: 15vh;
     width: 25vw;
 }
-header button{
+
+header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #feb4cd;
     position: absolute;
     border: 1px solid black;
     border-radius: 50%;
-    right: 3vh;
+    box-shadow: 1px 1px 1px 1px;
+    border-bottom: 1px 1px black;
+    border-right:1px 1px 1px 1px 1px 1px black;
+    right: 2vh;
     top: 10px;
-    width: 3vw;
-    height: ;
+    width: 12.7vw;
+    height: 7vh;
 }
 
+.burger {
+    padding: 0.6vw;
+    height: 5vh;
+}
+
+.imagen {
+    z-index: 0;
+    padding: auto;
+    margin: auto;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 21.5vh;
+}
+
+.parejas {
+    border: 1px black solid;
+    border-radius: 140px;
+    width: 60vw;
+    height: 55vh;
+}
+.star1 {
+    position: relative;
+    margin-left: 13px;
+    margin-bottom: 9vh;
+    z-index: 0;
+    width: 10vw;
+    height: 10vh;
+}
+.star3{
+    position: absolute;
+    right: 15px;
+    width: 6vw;
+}
+.star2{
+    position:absolute;
+    margin-top: 15vh;
+    width: 3vw;
+    height: 5vh;
+    margin-left: 8vw;
+
+}
