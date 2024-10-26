@@ -1,17 +1,19 @@
-@font-face{
+@font-face {
     font-family: "Gulfs Display";
     src: url(/Font_family/GulfsDisplay-Normal.ttf);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body html{
+body html {
     height: 100%;
 }
-.nav{
+
+.nav {
     width: 50%;
     position: absolute;
     right: 1%;
@@ -19,84 +21,182 @@ body html{
     justify-content: flex-end;
     border: solid black;
 }
-.nav .nav-links{
-    display: flex;
-    flex: 20px;
-    justify-content: space-around;
+
+.nav .nav-links {
     font-family: "Gulfs Display", sans-serif;
 }
-.nav .nav-links a{
+
+.nav .nav-links a {
     color: black;
 }
-.nav-links img{
-    width: 20px;
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 195px;
+    list-style-type: none;
 }
-section{
+
+.nav-links img {
+    width: 12.5px;
+}
+
+section {
     border: solid black;
     height: 900px;
-    background: linear-gradient(to bottom, 
-    #feb4cd 70%, #fff35f 50%) ;
+    background: linear-gradient(to bottom,
+            #feb4cd 70%, #fff35f 70%);
 }
-.title{
+
+.title {
     gap: 27px;
     height: 30%;
     z-index: 10;
-    top: 5%;
+    top: 4%;
     position: absolute;
-    left:35%;
+    left: 28%;
     border: solid black;
     display: flex;
     flex-direction: column;
 }
-.title .Capturamos{
+
+.title .Capturamos {
     height: 20%;
     text-align: center;
 }
-.title .sentimientos{
+
+.title .sentimientos {
     height: 10%;
     text-align: center;
 }
-.title .los{
+
+.title .los {
     height: 20%;
     text-align: center;
 }
-.title h1{
+
+.title h1 {
     font-family: "Gulfs Display";
     color: #035fff;
     font-weight: 150;
     font-size: 6em;
 
 }
-.line{
+
+.line {
     background-color: black;
     position: absolute;
     top: 66%;
     width: 100%;
-    height: 2px;
+    height: 0.5%;
 }
-.star-img{
+
+.star-img .star-1 {
+    z-index: 10;
+    width: 3%;
+    height: 3%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    left: 26.6%;
+    top: 20%;
     border: solid black;
+}
+
+.star-1 .star1 {
+    object-fit: cover;
+}
+
+.star-img .star-2 {
+    z-index: 10;
     width: 5%;
-}
-.star-1{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     position: absolute;
+    left: 28.6%;
+    bottom: 53%;
+    border: solid black;
 
+}
+
+.star-2 .star2 {
+    object-fit: cover;
+}
+
+.star-img .star-3 {
+    z-index: 10;
+    width: 3%;
+    height: 3%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    right: 30.6%;
+    bottom: 58%;
     border: solid black;
 }
 
-.parejas{
+.star-3 .star3 {
+    object-fit: cover;
+}
+
+.parejas {
+    z-index: 1;
     position: absolute;
-    left: 40%;
-    top: 25%;
+    left: 39.5%;
+    top: 29%;
     display: flex;
     justify-content: center;
     overflow: hidden;
     border: black solid;
-    width: 422px;
+    width: 425px;
     height: 600px;
     border-radius: 50% / 30%;
 }
-.parejas .par{
+
+.parejas .par {
     width: 100%;
     object-fit: cover;
 }
+
+.parejas2 {
+    position: absolute;
+    left: 0.3%;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    width: 300px;
+    height: 390px;
+    border: black solid;
+    border-radius: 10%;
+}
+
+.parejas2 #par2 {
+    object-fit: cover;
+    width: 100%;
+}
+
+.girl {
+    position: absolute;
+    right: 1.5%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    width: 290px;
+    height: 390px;
+    border: black solid;
+    border-radius: 10%;
+}
+
+.girl .pretty {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media(max-width: 768px) {}
