@@ -1,74 +1,102 @@
-* {
-    padding: 0;
+@font-face{
+    font-family: "Gulfs Display";
+    src: url(/Font_family/GulfsDisplay-Normal.ttf);
+}
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body {
-    min-width: 768px;;
-}
-header{
-    min-width:568px;
-    position: relative;
-    padding:20px;
-   min-height: 500px;
-    background-color: #feb4cd;
-    overflow: hidden;
-}
-.burger button{
-    background-color: #feb4cd;
-    position:absolute;
-    right:10px;
-    top: 10px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 10px;
-    border-right: 10px;
-    box-shadow: 2px 1px;
-    border: solid 2px black;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    z-index:10;
-}
-#bur{
-    margin: 10px;
-    padding: 3px;
-    width: 40px;
-}
-.estrellas-right img{
-    width: 15px;
-    position: absolute;
-    top:37%;
-    right:20%;
-}
 
-.imagen{
-    position:relative;
-    width: 80%px;
-    max-width: 350px;
-    margin: 30px auto;
-    aspect-ratio: 3/4;
-    border-radius: 50% / 30%;
-    overflow:hidden;
-    border: 1px solid black;
-}
-.imagen #parejas{
-    width: 100%;
+body html{
     height: 100%;
-    object-fit: cover;
 }
-
-.decoracion1{
+.nav{
+    width: 50%;
+    position: absolute;
+    right: 1%;
+    display: flex;
+    justify-content: flex-end;
+    border: solid black;
+}
+.nav .nav-links{
+    display: flex;
+    flex: 20px;
+    justify-content: space-around;
+    font-family: "Gulfs Display", sans-serif;
+}
+.nav .nav-links a{
+    color: black;
+}
+.nav-links img{
     width: 20px;
-    height: 20px;
-    top: 10%;
-    left: 10%;
-}
-.decoracion2{
-   
 }
 section{
-    min-width: 568px;
-    min-height: 500px;
-    background-color: #fff35f;
+    border: solid black;
+    height: 900px;
+    background: linear-gradient(to bottom, 
+    #feb4cd 70%, #fff35f 50%) ;
+}
+.title{
+    gap: 27px;
+    height: 30%;
+    z-index: 10;
+    top: 5%;
+    position: absolute;
+    left:35%;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+}
+.title .Capturamos{
+    height: 20%;
+    text-align: center;
+}
+.title .sentimientos{
+    height: 10%;
+    text-align: center;
+}
+.title .los{
+    height: 20%;
+    text-align: center;
+}
+.title h1{
+    font-family: "Gulfs Display";
+    color: #035fff;
+    font-weight: 150;
+    font-size: 6em;
+
+}
+.line{
+    background-color: black;
+    position: absolute;
+    top: 66%;
+    width: 100%;
+    height: 2px;
+}
+.star-img{
+    border: solid black;
+    width: 5%;
+}
+.star-1{
+    position: absolute;
+
+    border: solid black;
+}
+
+.parejas{
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: black solid;
+    width: 422px;
+    height: 600px;
+    border-radius: 50% / 30%;
+}
+.parejas .par{
+    width: 100%;
+    object-fit: cover;
 }
