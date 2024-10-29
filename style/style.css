@@ -4,6 +4,10 @@
     font-family: "Gulfs Display";
     src: url(/Font_family/GulfsDisplay-Normal.ttf);
 }
+img picture svg{
+    width: 100%;
+    display: block;
+}
 
 * {
     margin: 0;
@@ -43,7 +47,7 @@ body{
     width: 12.5px;
 }
 
-section {
+.head {
     border: solid black;
     height: 900px;
     background: linear-gradient(to bottom,
@@ -199,4 +203,17 @@ section {
 .girl .pretty {
     object-fit: cover;
     width: 100%;
+}
+.second{
+    height: 95.5vh;
+    background-color: #fff35f;
+}
+.second .about{
+    display: flex;
+}
+.second .about h2{
+    font-family: "Anybody", sans-serif;
+    color: ;       
+}
+[class^="" ]{
 }
