@@ -1,8 +1,10 @@
 @font-face {
-    font-family: "Anybody";
-    src: url(/Font_family/Anybody/Anybody-VariableFont_wdth\,wght.ttf);
     font-family: "Gulfs Display";
     src: url(/Font_family/GulfsDisplay-Normal.ttf);
+}
+@font-face{
+    font-family: "Anybody";
+    src: url(/Font_family/Anybody/Anybody-Italic-VariableFont_wdth\,wght.ttf);
 }
 img picture svg{
     width: 100%;
@@ -16,7 +18,8 @@ img picture svg{
 }
 
 body{
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .nav {
@@ -210,10 +213,27 @@ body{
 }
 .second .about{
     display: flex;
+    flex-direction: ;
+    justify-content: ;
 }
-.second .about h2{
+.second .about h1{
+    display: flex;
+    justify-content: center;
     font-family: "Anybody", sans-serif;
-    color: ;       
+    color:#6c95b7;
+    font-size: 6.5em;       
 }
+.second .about p{
+    font-family: "Anybody", sans-serif;
+    font-size: 1.5em;
+    color: black;
+}
+.second .couple_la{
+    position: absolute;
+    left: 10%;
+    bottom: 0.6%;   
+}
+
 [class^="" ]{
+    
 }
